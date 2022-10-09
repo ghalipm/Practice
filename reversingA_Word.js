@@ -4,11 +4,19 @@ function reverseTheWord(word){
     for (let i = word.length; i >=0; i--) {
         newWord+=word.charAt(i);
     }
-    console.log(word+ ' reversed: '+newWord)
+    return newWord;
+    //console.log(word+ ' reversed: '+newWord)
+}
+
+function palindrome(word) {
+    return word.toUpperCase()===reverseTheWord(word).toUpperCase();
 }
 
 //Call the function
-reverseTheWord('Gabbay');
+word='Anna'; // baba
+console.log(word+' reversed: '+reverseTheWord(word))
+console.log('It is palindrome: '+palindrome(word));
+
 
 
 
